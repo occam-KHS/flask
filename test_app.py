@@ -13,7 +13,7 @@ def post_submit():
 @app.route('/get_submit', methods=['GET'])
 def get_submit():
     name = request.args.get('name')
-    return jsonify({"message": f"Received {name}"}) 
+    return jsonify({"message": f"{name}"}) 
     
 
 if __name__ == "__main__":
