@@ -7,7 +7,6 @@ response = requests.get(url, params=params)
 
 # Handle response
 if response.ok:
-    print(f"name: {response.json()['message']}")
-          
+    print(f"name: {response.json()['message']}")          
 else:
     print(f"Error {response.status_code}: {response.text}")   
